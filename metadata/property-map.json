@@ -1,0 +1,28 @@
+{
+  "repo": "ocamltype",
+  "language": "OCaml",
+  "category": "Compilers",
+  "goal": "Infer simple Hindley-Milner types for lets and lambdas.",
+  "weights": {
+    "signal": 2,
+    "slack": 2,
+    "confidence": 1,
+    "drag": 3
+  },
+  "thresholds": {
+    "ship": 156,
+    "watch": 125
+  },
+  "properties": [
+    "raising signal cannot reduce score",
+    "raising drag cannot improve score",
+    "lane labels must match configured thresholds",
+    "golden fixture ids must remain unique"
+  ],
+  "fixture_files": [
+    "fixtures/golden/scoreboard.csv",
+    "fixtures/golden/lane-matrix.csv",
+    "fixtures/fuzz/mutations.csv",
+    "fixtures/fuzz/boundary-cases.jsonl"
+  ]
+}
